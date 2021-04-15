@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Testportal Info",
+	"version": "0.1.0",
+	"content_scripts" : [
+		{
+			"js" : ["crypto.min.js", "jquery3.min.js", "site.js"],
+			"matches" : ["*://www.testportal.pl/exam/*"]
+		}
+	],
+	"browser_action": {
+		"default_icon": "resources/icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Testportal odpowiedzi"
+	}
+}
